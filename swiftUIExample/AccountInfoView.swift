@@ -10,11 +10,11 @@ import SwiftUI
 
 struct AccountInfoView: View {
     
-    @State private var firstName = ""
-    @State private var lastName = ""
+    @State private var firstName = "Vishal"
+    @State private var lastName = "Gupta"
     @State private var dob = Date()
     @State private var notificationEnabled = true
-    @State private var cartValue = 0
+    @State private var cartValue = 5
 
     var body: some View {
         NavigationView {

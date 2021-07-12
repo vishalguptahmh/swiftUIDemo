@@ -17,7 +17,7 @@ struct SegmentedView: View {
     @State private var selectedTab : TabName = .main
     var body: some View {
        
-        NavigationView {
+//        NavigationView {
             VStack {
                 Picker("Choose a Side", selection: $selectedTab) {
                     ForEach(TabName.allCases , id: \.self) {
@@ -32,14 +32,14 @@ struct SegmentedView: View {
                 Spacer()
                 
             }
-            .navigationBarItems(leading: Button(action: {}, label: {
-                
-                MySmallImage()
-//                    .foregroundColor(.blue)
-            }))
-            .navigationTitle("UI Demo")
+//            .navigationBarItems(leading: Button(action: {}, label: {
+//
+//                MySmallImage()
+////                    .foregroundColor(.blue)
+//            }))
+//            .navigationTitle("UI Demo")
 //            .navigationBarTitleDisplayMode(.inline)
-        }
+//        }
       
     
     }
@@ -65,7 +65,8 @@ struct ChooseTab : View {
         case .profile:
             AccountInfoView()
         case .main :
-            LoginUIView()
+            Account(name: selectedSide.rawValue)
+//            LoginUIView()
         default:
             Account(name: selectedSide.rawValue)
         }
@@ -91,12 +92,4 @@ struct SegmentedView_Previews: PreviewProvider {
     }
 }
 
-struct MySmallImage :  View {
-    var body: some View{
-        Image("profiledp").resizable().aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-            .frame(width: 50, height: 50)
-            .clipped()
-            .cornerRadius(150)
-            .padding()
-    }
-}
+

@@ -8,42 +8,67 @@
 import SwiftUI
 
 struct SideMenuHeaderView: View {
+    @Binding var isShowing : Bool
     var body: some View {
-        VStack  (alignment:.leading) {
-            Image("profiledp")
-                .resizable()
-                .scaledToFill()
-                .clipped()
-                .frame(width: 64, height: 64)
-                .clipShape(Circle())
-                .padding(.bottom,16)
+        ZStack(alignment : .topTrailing) {
             
-            Text("John Doe")
-                .font(.system(size: 24, weight : .semibold))
-            
-            Text("@email")
-                .font(.system(size: 14)).padding(.bottom,12)
-            
-            HStack (spacing : 12) {
-                HStack (spacing : 14) {
-                    Text("123").bold()
-                    Text("following")
+            // x button to close
+            Button(action: {
+                withAnimation( .spring() ){
+                    isShowing.toggle()
                 }
-                HStack (spacing : 4) {
-                    Text("607").bold()
-                    Text("Followers")
+            }, label: {
+                Image(systemName: "xmark")
+                    .frame(width: 32, height: 32)
+                    .foregroundColor(.white)
+                    .padding()
+            })
+            
+            
+            
+            VStack  (alignment:.leading) {
+                Button(action: {
+                    withAnimation( .spring() ){
+                        isShowing.toggle()
+                    }
+                }, label: {
+                    Image("profiledp")
+                        .resizable()
+                        .scaledToFill()
+                        .clipped()
+                        .frame(width: 64, height: 64)
+                        .clipShape(Circle())
+                        .padding(.bottom,16)
+                })
+                
+                
+                Text("John Doe")
+                    .font(.system(size: 24, weight : .semibold))
+                
+                Text("@email")
+                    .font(.system(size: 14)).padding(.bottom,12)
+                
+                HStack (spacing : 12) {
+                    HStack (spacing : 14) {
+                        Text("123").bold()
+                        Text("following")
+                    }
+                    HStack (spacing : 4) {
+                        Text("607").bold()
+                        Text("Followers")
+                    }
+                    Spacer()
                 }
+               
+                
                 Spacer()
-            }
-           
-            
-            Spacer()
-        }.padding()
+            }.padding()
+        }
     }
 }
 
 struct SideMenuHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenuHeaderView()
+        SideMenuHeaderView(isShowing: .constant(true))
     }
 }

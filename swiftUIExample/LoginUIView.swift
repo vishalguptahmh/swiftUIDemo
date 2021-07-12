@@ -78,36 +78,4 @@ struct LoginUIView_Previews: PreviewProvider {
     }
 }
 
-struct loginButtonView: View {
-    var body: some View {
-        Text("Login")
-            .font(.headline)
-            .padding()
-            .foregroundColor(.white)
-            .frame(width: 320, height: 60)
-            .background(Color.black)
-            .cornerRadius(30.0)
-    }
-}
 
-struct UserNameTextFieldView: View {
-    @Binding var username : String
-    var body: some View {
-        TextField("UserName", text: $username)
-            .padding()
-            .background(Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0))
-            .cornerRadius(5.0)
-            .padding(.bottom,20)
-    }
-}
-
-struct PasswordTextFieldView: View {
-    @Binding var password   : String
-    var body: some View {
-        SecureField("Password", text: $password)
-            .padding()
-            .background(Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0))
-            .cornerRadius(5.0)
-            .padding(.bottom,20)
-    }
-}
