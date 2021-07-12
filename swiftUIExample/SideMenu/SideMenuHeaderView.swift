@@ -20,7 +20,7 @@ struct SideMenuHeaderView: View {
             }, label: {
                 Image(systemName: "xmark")
                     .frame(width: 32, height: 32)
-                    .foregroundColor(.white)
+                   
                     .padding()
             })
             
@@ -64,19 +64,20 @@ struct SideMenuHeaderView: View {
                 Text("@email")
                     .font(.system(size: 14)).padding(.bottom,12)
                 
+             
                 HStack (spacing : 12) {
-                    HStack (spacing : 14) {
-                        Text("123").bold()
-                        Text("following")
-                    }
-                    HStack (spacing : 4) {
-                        Text("607").bold()
-                        Text("Followers")
-                    }
+//                    HStack (spacing : 14) {
+//                        Text("123").bold()
+//                        Text("following")
+//                    }
+//                    HStack (spacing : 4) {
+//                        Text("607").bold()
+//                        Text("Followers")
+//                    }
                     Spacer()
                 }
-               
-                
+//
+//
                 Spacer()
             }.padding()
         }

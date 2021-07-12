@@ -66,6 +66,8 @@ struct ChooseTab : View {
             AccountInfoView()
         case .main :
             Account(name: selectedSide.rawValue)
+        case .setting :
+            SettingsUiView()
 //            LoginUIView()
         default:
             Account(name: selectedSide.rawValue)

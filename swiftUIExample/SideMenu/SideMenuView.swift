@@ -16,7 +16,7 @@ struct SideMenuView: View {
             VStack {
 //                Header
                 SideMenuHeaderView(isShowing: $isShowing)
-                    .foregroundColor(.white).frame(height: 200)
+                    .foregroundColor(.white).frame(height: 150)
 //                Cell Items
                 
                 ForEach(SideMenuViewModel.allCases ,  id: \.self) { value in
@@ -50,12 +50,22 @@ struct SideMenuView_Previews: PreviewProvider {
 struct DestinationAfterClick: View {
     @State var sideModel : SideMenuViewModel
     var body: some View {
-        if(SideMenuViewModel.profile == sideModel){
+        switch sideModel {
+        case SideMenuViewModel.home:
+            Text(sideModel.title)
+        case SideMenuViewModel.yourAccount :
             AccountInfoView()
-        }
-        else{
+        case SideMenuViewModel.settings:
+            SettingsUiView()
+        default:
             Text(sideModel.title)
         }
+//        if(SideMenuViewModel.yourAccount == sideModel){
+//            AccountInfoView()
+//        }
+//        else{
+//            Text(sideModel.title)
+//        }
         
     }
 }

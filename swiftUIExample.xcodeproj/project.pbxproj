@@ -20,6 +20,7 @@
 		87F07764269C3B7600AC3454 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F07763269C3B7600AC3454 /* DashboardView.swift */; };
 		87F07768269CAFF200AC3454 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F07767269CAFF200AC3454 /* BaseUIView.swift */; };
 		87F0776C269CB97100AC3454 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F0776B269CB97100AC3454 /* AppModel.swift */; };
+		87F0776F269CC1B000AC3454 /* SettingsUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F0776E269CC1B000AC3454 /* SettingsUiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		87F07763269C3B7600AC3454 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		87F07767269CAFF200AC3454 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
 		87F0776B269CB97100AC3454 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		87F0776E269CC1B000AC3454 /* SettingsUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				875898B9269AF85100ED0350 /* Preview Content */,
 				875898D7269B15BD00ED0350 /* SideMenu */,
 				87F0776B269CB97100AC3454 /* AppModel.swift */,
+				87F0776E269CC1B000AC3454 /* SettingsUiView.swift */,
 			);
 			path = swiftUIExample;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				87F0776C269CB97100AC3454 /* AppModel.swift in Sources */,
 				875898E0269B16A300ED0350 /* SideMenuHeaderView.swift in Sources */,
 				875898D5269B15B000ED0350 /* SideMenuViewModel.swift in Sources */,
+				87F0776F269CC1B000AC3454 /* SettingsUiView.swift in Sources */,
 				87F07764269C3B7600AC3454 /* DashboardView.swift in Sources */,
 				87F07768269CAFF200AC3454 /* BaseUIView.swift in Sources */,
 				875898B6269AF85000ED0350 /* AccountInfoView.swift in Sources */,

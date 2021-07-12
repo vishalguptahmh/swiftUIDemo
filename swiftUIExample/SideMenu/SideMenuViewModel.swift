@@ -8,20 +8,24 @@
 import Foundation
 enum SideMenuViewModel: Int, CaseIterable {
     
-    case profile
-    case lists
-    case bookmarks
-    case messages
-    case notification
+    case home
+    case yourAccount
+    case shopByCategory
+    case todaysDeal
+    case yourOrders
+    case yourWishList
+    case settings
     case logout
  
     var title : String {
         switch self {
-        case .profile: return "Profile"
-        case .lists : return "List"
-        case .bookmarks : return "Bookmarks"
-        case .messages : return "Message"
-        case .notification : return "Notification"
+        case .home: return "Home"
+        case .yourAccount : return "Your Account"
+        case .shopByCategory : return "Shop By Catagory"
+        case .todaysDeal : return "Today's Deal"
+        case .yourOrders : return "Your Orders"
+        case .yourWishList : return "Your WishList"
+        case .settings : return "Settings"
         case .logout : return "Logout"
         }
     }
@@ -29,11 +33,13 @@ enum SideMenuViewModel: Int, CaseIterable {
     
     var ImageName : String {
         switch self {
-        case .profile: return "person"
-        case .lists : return "list.bullet"
-        case .bookmarks : return "bookmark"
-        case .messages: return "bubble.left"
-        case .notification : return "bell"
+        case .home: return "chevron.right"
+        case .yourAccount : return "person.circle.fill"
+        case .shopByCategory : return "bag.fill"
+        case .todaysDeal : return "flame"
+        case .yourOrders : return "bag"
+        case .yourWishList : return "suit.heart.fill"
+        case .settings : return "gear"
         case .logout : return "arrow.left.square"
         }
     }
