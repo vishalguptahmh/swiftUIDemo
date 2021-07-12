@@ -27,11 +27,12 @@ struct SideMenuHeaderView: View {
             
             
             VStack  (alignment:.leading) {
-                Button(action: {
-                    withAnimation( .spring() ){
-                        isShowing.toggle()
-                    }
-                }, label: {
+                NavigationLink(
+                 destination:
+                     
+                    AccountInfoView(),
+                    
+                 label: {
                     Image("profiledp")
                         .resizable()
                         .scaledToFill()
@@ -39,10 +40,25 @@ struct SideMenuHeaderView: View {
                         .frame(width: 64, height: 64)
                         .clipShape(Circle())
                         .padding(.bottom,16)
-                })
+                 })
+             
+            
+//                Button(action: {
+//                    withAnimation( .spring() ){
+//                        isShowing.toggle()
+//                    }
+//                }, label: {
+//                    Image("profiledp")
+//                        .resizable()
+//                        .scaledToFill()
+//                        .clipped()
+//                        .frame(width: 64, height: 64)
+//                        .clipShape(Circle())
+//                        .padding(.bottom,16)
+//                })
+//
                 
-                
-                Text("John Doe")
+                Text("Vishal Gupta")
                     .font(.system(size: 24, weight : .semibold))
                 
                 Text("@email")

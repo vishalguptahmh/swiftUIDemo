@@ -20,8 +20,12 @@ struct SideMenuView: View {
 //                Cell Items
                 
                 ForEach(SideMenuViewModel.allCases ,  id: \.self) { value in
-                   NavigationLink(
-                    destination: Text(value.title),
+                  
+                    NavigationLink(
+                    destination:
+                        
+                        DestinationAfterClick(sideModel: value ),
+                    
                     label: {
                         SideMenuOptionView(model: value)
                     })
@@ -40,5 +44,18 @@ struct SideMenuView: View {
 struct SideMenuView_Previews: PreviewProvider {
     static var previews: some View {
         SideMenuView(isShowing: .constant(true))
+    }
+}
+
+struct DestinationAfterClick: View {
+    @State var sideModel : SideMenuViewModel
+    var body: some View {
+        if(SideMenuViewModel.profile == sideModel){
+            AccountInfoView()
+        }
+        else{
+            Text(sideModel.title)
+        }
+        
     }
 }
