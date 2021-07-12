@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		875898B4269AF85000ED0350 /* swiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875898B3269AF85000ED0350 /* swiftUIExampleApp.swift */; };
-		875898B6269AF85000ED0350 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875898B5269AF85000ED0350 /* ContentView.swift */; };
+		875898B6269AF85000ED0350 /* AccountInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875898B5269AF85000ED0350 /* AccountInfoView.swift */; };
 		875898B8269AF85100ED0350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875898B7269AF85100ED0350 /* Assets.xcassets */; };
 		875898BB269AF85100ED0350 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875898BA269AF85100ED0350 /* Preview Assets.xcassets */; };
+		875898C4269B006100ED0350 /* SegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875898C3269B006100ED0350 /* SegmentedView.swift */; };
+		875898C7269B09B000ED0350 /* LoginUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875898C6269B09B000ED0350 /* LoginUIView.swift */; };
+		875898D5269B15B000ED0350 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875898D4269B15B000ED0350 /* SideMenuViewModel.swift */; };
+		875898DD269B167600ED0350 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875898DC269B167600ED0350 /* SideMenuView.swift */; };
+		875898E0269B16A300ED0350 /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875898DF269B16A300ED0350 /* SideMenuHeaderView.swift */; };
+		875898E3269B16B400ED0350 /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875898E2269B16B400ED0350 /* SideMenuOptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		875898B0269AF85000ED0350 /* swiftUIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		875898B3269AF85000ED0350 /* swiftUIExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIExampleApp.swift; sourceTree = "<group>"; };
-		875898B5269AF85000ED0350 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		875898B5269AF85000ED0350 /* AccountInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoView.swift; sourceTree = "<group>"; };
 		875898B7269AF85100ED0350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		875898BA269AF85100ED0350 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		875898BC269AF85100ED0350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		875898C3269B006100ED0350 /* SegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedView.swift; sourceTree = "<group>"; };
+		875898C6269B09B000ED0350 /* LoginUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUIView.swift; sourceTree = "<group>"; };
+		875898D4269B15B000ED0350 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		875898DC269B167600ED0350 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		875898DF269B16A300ED0350 /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
+		875898E2269B16B400ED0350 /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				875898B3269AF85000ED0350 /* swiftUIExampleApp.swift */,
-				875898B5269AF85000ED0350 /* ContentView.swift */,
+				875898B5269AF85000ED0350 /* AccountInfoView.swift */,
 				875898B7269AF85100ED0350 /* Assets.xcassets */,
 				875898BC269AF85100ED0350 /* Info.plist */,
 				875898B9269AF85100ED0350 /* Preview Content */,
+				875898C3269B006100ED0350 /* SegmentedView.swift */,
+				875898C6269B09B000ED0350 /* LoginUIView.swift */,
+				875898D7269B15BD00ED0350 /* SideMenu */,
 			);
 			path = swiftUIExample;
 			sourceTree = "<group>";
@@ -67,6 +82,17 @@
 				875898BA269AF85100ED0350 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		875898D7269B15BD00ED0350 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				875898D4269B15B000ED0350 /* SideMenuViewModel.swift */,
+				875898DC269B167600ED0350 /* SideMenuView.swift */,
+				875898DF269B16A300ED0350 /* SideMenuHeaderView.swift */,
+				875898E2269B16B400ED0350 /* SideMenuOptionView.swift */,
+			);
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +164,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				875898B6269AF85000ED0350 /* ContentView.swift in Sources */,
+				875898DD269B167600ED0350 /* SideMenuView.swift in Sources */,
+				875898E3269B16B400ED0350 /* SideMenuOptionView.swift in Sources */,
+				875898E0269B16A300ED0350 /* SideMenuHeaderView.swift in Sources */,
+				875898D5269B15B000ED0350 /* SideMenuViewModel.swift in Sources */,
+				875898B6269AF85000ED0350 /* AccountInfoView.swift in Sources */,
 				875898B4269AF85000ED0350 /* swiftUIExampleApp.swift in Sources */,
+				875898C7269B09B000ED0350 /* LoginUIView.swift in Sources */,
+				875898C4269B006100ED0350 /* SegmentedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
